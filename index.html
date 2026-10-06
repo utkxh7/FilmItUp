@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FILMITUP — Production-Led Creative Studio / Indore & Dubai</title>
+  <meta name="description" content="FILMITUP is a production-led visual studio. We bring cinema-grade direction, commercial film production, and social-first systems to brands across India and Dubai." />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="FILMITUP — Production-Led Creative Studio" />
+  <meta property="og:description" content="Cinema-grade direction applied to commercial brands across India & Dubai." />
+  <meta property="og:url" content="https://filmitup.in/" />
+
+  <!-- Fonts: Syne (Brutalist Architecture Display), Plus Jakarta Sans (Clean Grotesk Body), Space Mono (Technical Coordinates) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="studio-body">
+
+  <!-- Ambient Fog Overlay & Film Grain -->
+  <div class="fog-overlay" aria-hidden="true"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="brand-monolith">
+        <span class="brand-code">FILMITUP</span>
+        <span class="brand-status-dot"></span>
+        <span class="brand-sub">STUDIO // INDORE &bull; DUBAI</span>
+      </a>
+
+      <nav class="nav-cluster">
+        <a href="#work" class="nav-item"><span class="mono-idx">[01]</span> WORK</a>
+        <a href="#pipeline" class="nav-item"><span class="mono-idx">[02]</span> PIPELINE</a>
+        <a href="#metrics" class="nav-item"><span class="mono-idx">[03]</span> METRICS</a>
+        <a href="#studio" class="nav-item"><span class="mono-idx">[04]</span> STUDIO</a>
+        <a href="#contact" class="nav-cta-btn">TRANSMIT INQUIRY &rarr;</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <span class="mono-tag">// NAVIGATION INDEX</span>
+      <button class="drawer-close" id="drawerClose">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#work" class="drawer-item"><span class="drawer-num">01</span> SELECTED WORK</a>
+      <a href="#pipeline" class="drawer-item"><span class="drawer-num">02</span> THE PIPELINE</a>
+      <a href="#metrics" class="drawer-item"><span class="drawer-num">03</span> PROVEN IMPACT</a>
+      <a href="#studio" class="drawer-item"><span class="drawer-num">04</span> STUDIO ETHOS</a>
+      <a href="#contact" class="drawer-item highlight"><span class="drawer-num">05</span> INITIATE PROJECT &rarr;</a>
+    </div>
+    <div class="drawer-footer">
+      <span class="mono-dim">INDORE / CENTRAL INDIA &bull; DUBAI UAE</span>
+      <span class="mono-dim">&copy; 2025 FILMITUP MEDIA</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION: Architectural Monolith -->
+    <section class="hero-monolith" id="home">
+      <div class="hero-container">
+        
+        <!-- Technical Coordinates Bar -->
+        <div class="meta-coords-bar">
+          <span class="coord-item"><span class="coord-label">LOC:</span> 22.7196&deg; N, 75.8577&deg; E // 25.2048&deg; N, 55.2708&deg; E</span>
+          <span class="coord-item"><span class="coord-label">SYS:</span> PRODUCTION-LED CREATIVE AGENCY</span>
+          <span class="coord-item status"><span class="pulse-dot"></span> COMMISSIONING ACTIVE Q1-Q2</span>
+        </div>
+
+        <!-- Giant Monolithic Headline -->
+        <div class="hero-headline-block">
+          <h1 class="hero-title">
+            <span class="title-row">CINEMA-GRADE</span>
+            <span class="title-row hollow">DIRECTION FOR</span>
+            <span class="title-row">COMMERCIAL BRANDS.</span>
+          </h1>
+          <p class="hero-thesis">
+            Nobody hires us to shoot feature films. They hire us so their catering empire, trading enterprise, or commercial brand looks like it has a film director behind it.
+          </p>
+        </div>
+
+        <!-- Hero Actions -->
+        <div class="hero-actions-bar">
+          <a href="#work" class="btn-brutal primary">
+            <span class="btn-text">EXPLORE SELECTED WORK</span>
+            <span class="btn-icon">&darr;</span>
+          </a>
+          <button class="btn-brutal secondary" id="heroReelBtn">
+            <span class="btn-pulse-icon">&#9658;</span>
+            <span class="btn-text">PLAY STUDIO SHOWREEL [01:14]</span>
+          </button>
+        </div>
+
+        <!-- Showreel Monolith Screen -->
+        <div class="hero-screen-wrap">
+          <div class="screen-frame" id="showreelScreen">
+            <img src="images/hero.jpg" alt="FilmItUp Production Screen Still" class="screen-poster" />
+            <div class="screen-overlay">
+              <div class="screen-meta-top">
+                <span class="spec-badge">4K MASTER / 24 FPS</span>
+                <span class="spec-badge">STUDIO SHOWREEL 2025</span>
+              </div>
+              <div class="screen-center-play">
+                <div class="play-ring">
+                  <span class="play-arrow">&#9654;</span>
+                </div>
+                <span class="play-caption">PRESS TO UNMUTE & EXPAND</span>
+              </div>
+              <div class="screen-meta-bottom">
+                <span class="spec-code">[PROJECTS: PIZZA DON &bull; YAGAANA &bull; HIRANANDANI &bull; NAZARA &bull; DUBAI TRADE]</span>
+                <span class="spec-code">COLOR TIMED IN DAVINCI RESOLVE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: THE GALLERY (Selected Works) -->
+    <section class="gallery-section" id="work">
+      <div class="section-container">
+        
+        <div class="section-top-bar">
+          <div class="section-title-wrap">
+            <span class="mono-flag">// [INDEX: 01]</span>
+            <h2 class="section-heading">SELECTED WORKS</h2>
+          </div>
+          <div class="gallery-controls">
+            <span class="filter-label">CATEGORY:</span>
+            <button class="gal-filter active" data-filter="all">ALL [06]</button>
+            <button class="gal-filter" data-filter="commercial">COMMERCIAL [03]</button>
+            <button class="gal-filter" data-filter="brand-film">BRAND FILM [02]</button>
+            <button class="gal-filter" data-filter="narrative">NARRATIVE [01]</button>
+          </div>
+        </div>
+
+        <p class="section-subtext">
+          Raw concrete walls. Vivid saturated work. Everyday commercial commissions framed with directorial precision.
+        </p>
+
+        <!-- Works Grid -->
+        <div class="works-grid">
+          
+          <!-- Project 1: Pizza Don -->
+          <article class="work-monolith" data-category="commercial" data-title="PIZZA DON" data-client="Pizza Don Culinary Group" data-type="Culinary Commercial & TVC" data-metric="2.4M ORGANIC REACH &bull; 180% FOOTFALL SPIKE" data-year="2024" data-img="images/work-commercial.jpg" data-desc="High-energy culinary commercial celebrating authentic woodfired pizza craft, dynamic macro steam capture, and Foley sound design.">
+            <div class="monolith-media">
+              <img src="images/work-commercial.jpg" alt="Pizza Don Commercial Still" loading="lazy" />
+              <div class="media-hover-overlay">
+                <span class="hover-play-btn">&#9654; VIEW FILM DETAILS</span>
+              </div>
+              <div class="media-badge-tag">[01 // COMMERCIAL]</div>
+            </div>
+            <div class="monolith-meta">
+              <div class="meta-row-header">
+                <h3 class="meta-title">PIZZA DON: ARTISANAL FIRE</h3>
+                <span class="meta-year">[2024]</span>
+              </div>
+              <p class="meta-brief">Directorial commercial capturing culinary craft and dynamic ambient dining.</p>
+              <div class="meta-footer">
+                <span class="meta-metric-tag">&#9679; 2.4M ORGANIC VIEWS</span>
+                <span class="meta-spec">16:9 4K CINEMA</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Yagaana -->
+          <article class="work-monolith" data-category="brand-film" data-title="YAGAANA" data-client="Yagaana Haute Couture" data-type="Fashion Brand Film" data-metric="4.1M CAMPAIGN IMPRESSIONS &bull; VIRAL REACH" data-year="2024" data-img="images/reel-fashion.jpg" data-desc="Opulent luxury fashion film capturing royal Indian textiles against architectural stonework with slow-motion sunlight refractions.">
+            <div class="monolith-media">
+              <img src="images/reel-fashion.jpg" alt="Yagaana Couture Still" loading="lazy" />
+              <div class="media-hover-overlay">
+                <span class="hover-play-btn">&#9654; VIEW FILM DETAILS</span>
+              </div>
+              <div class="media-badge-tag">[02 // BRAND FILM]</div>
+            </div>
+            <div class="monolith-meta">
+              <div class="meta-row-header">
+                <h3 class="meta-title">YAGAANA: ROYAL SILHOUETTES</h3>
+                <span class="meta-year">[2024]</span>
+              </div>
+              <p class="meta-brief">High-fashion brand film blending heritage architectural geometry with couture flow.</p>
+              <div class="meta-footer">
+                <span class="meta-metric-tag">&#9679; 4.1M CAMPAIGN REACH</span>
+                <span class="meta-spec">9:16 + 16:9 COUTURE CUT</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Hiranandani Estate -->
+          <article class="work-monolith" data-category="commercial" data-title="HIRANANDANI" data-client="Hiranandani Group" data-type="Architecture & Launch Film" data-metric="VIP LAUNCH KEYNOTE &bull; 1.8M DIGITAL REACH" data-year="2024" data-img="images/work-event.jpg" data-desc="Large-scale cinematic coverage and brand film for ultra-luxury residential towers with drone cinematography and live event energy.">
+            <div class="monolith-media">
+              <img src="images/work-event.jpg" alt="Hiranandani Architecture Still" loading="lazy" />
+              <div class="media-hover-overlay">
+                <span class="hover-play-btn">&#9654; VIEW FILM DETAILS</span>
+              </div>
+              <div class="media-badge-tag">[03 // ARCHITECTURE]</div>
+            </div>
+            <div class="monolith-meta">
+              <div class="meta-row-header">
+                <h3 class="meta-title">HIRANANDANI: SKY LIVING</h3>
+                <span class="meta-year">[2024]</span>
+              </div>
+              <p class="meta-brief">Multi-cam architectural launch film with high-altitude drone tracking and keynote pacing.</p>
+              <div class="meta-footer">
+                <span class="meta-metric-tag">&#9679; 1.8M DIGITAL REACH</span>
+                <span class="meta-spec">DRONE 4K // DOLBY MASTER</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Nazara Fine Diamonds -->
+          <article class="work-monolith" data-category="commercial" data-title="NAZARA DIAMONDS" data-client="Nazara Luxury Jewelers" data-type="Macro Commercial Film" data-metric="3.6M VIRAL REEL VIEWS &bull; HIGH-TICKET INQUIRIES" data-year="2024" data-img="images/reel-jewelry.jpg" data-desc="Ultra-macro optical cinematography illuminating the refractive brilliance of bespoke solitaire diamonds and bridal craftsmanship.">
+            <div class="monolith-media">
+              <img src="images/reel-jewelry.jpg" alt="Nazara Diamonds Still" loading="lazy" />
+              <div class="media-hover-overlay">
+                <span class="hover-play-btn">&#9654; VIEW FILM DETAILS</span>
+              </div>
+              <div class="media-badge-tag">[04 // LUXURY MACRO]</div>
+            </div>
+            <div class="monolith-meta">
+              <div class="meta-row-header">
+                <h3 class="meta-title">NAZARA: LIGHT & REFRACTION</h3>
+                <span class="meta-year">[2024]</span>
+              </div>
+              <p class="meta-brief">Precision macro optical commercials designed for algorithmic stop-scroll retention.</p>
+              <div class="meta-footer">
+                <span class="meta-metric-tag">&#9679; 3.6M VIEWS RECORD</span>
+                <span class="meta-spec">MACRO CINEMA PROBE</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Wedding Pulao -->
+          <article class="work-monolith" data-category="narrative" data-title="WEDDING PULAO" data-client="Wedding Pulao Catering" data-type="Brand Narrative Campaign" data-metric="1.5M VIRAL VIEWS &bull; NATIONAL INQUIRIES" data-year="2024" data-img="images/work-brand.jpg" data-desc="Warm, celebratory narrative film proving that a catering company can have the storytelling depth of a Bollywood production.">
+            <div class="monolith-media">
+              <img src="images/work-brand.jpg" alt="Wedding Pulao Narrative Still" loading="lazy" />
+              <div class="media-hover-overlay">
+                <span class="hover-play-btn">&#9654; VIEW FILM DETAILS</span>
+              </div>
+              <div class="media-badge-tag">[05 // NARRATIVE]</div>
+            </div>
+            <div class="monolith-meta">
+              <div class="meta-row-header">
+                <h3 class="meta-title">WEDDING PULAO: FEAST & SOUL</h3>
+                <span class="meta-year">[2024]</span>
+              </div>
+              <p class="meta-brief">Directorial brand film that elevated an Indore catering service into a beloved regional cultural brand.</p>
+              <div class="meta-footer">
+                <span class="meta-metric-tag">&#9679; 1.5M VIRAL VIEWS</span>
+                <span class="meta-spec">SCRIPT &bull; DIRECTION &bull; GRADE</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Colors Packaging & The Edit Suite -->
+          <article class="work-monolith" data-category="brand-film" data-title="COLORS PACKAGING" data-client="Colors Packaging Corp" data-type="Industrial Brand Film" data-metric="GLOBAL B2B EXPORT CONTRACTS SIGNED" data-year="2024" data-img="images/work-editing.jpg" data-desc="Heavy industrial machines, automated manufacturing, and modern engineering shot like high-tech cinematic art.">
+            <div class="monolith-media">
+              <img src="images/work-editing.jpg" alt="Industrial Production Still" loading="lazy" />
+              <div class="media-hover-overlay">
+                <span class="hover-play-btn">&#9654; VIEW FILM DETAILS</span>
+              </div>
+              <div class="media-badge-tag">[06 // INDUSTRIAL MOTION]</div>
+            </div>
+            <div class="monolith-meta">
+              <div class="meta-row-header">
+                <h3 class="meta-title">COLORS: INDUSTRIAL PRECISION</h3>
+                <span class="meta-year">[2024]</span>
+              </div>
+              <p class="meta-brief">Transforming factory floors and manufacturing machinery into high-tech brand assets for global trade.</p>
+              <div class="meta-footer">
+                <span class="meta-metric-tag">&#9679; GLOBAL B2B TRACTION</span>
+                <span class="meta-spec">DAVINCI RESOLVE GRADE</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: THE PIPELINE (Production + Social As One) -->
+    <section class="pipeline-section" id="pipeline">
+      <div class="section-container">
+        
+        <div class="section-title-wrap">
+          <span class="mono-flag">// [INDEX: 02]</span>
+          <h2 class="section-heading">THE UNIFIED PIPELINE</h2>
+        </div>
+        <p class="section-subtext">
+          We don't separate video production from social distribution. Camera craft and audience retention are engineered as one continuous machine.
+        </p>
+
+        <div class="pipeline-blocks">
+          
+          <div class="pipeline-item">
+            <div class="p-num">01</div>
+            <div class="p-content">
+              <h3 class="p-title">COMMERCIAL FILM & DIRECTED MOTION</h3>
+              <p class="p-desc">
+                High-end camera direction, anamorphic lighting, art direction, and sound design. From food commercials to industrial documentaries, we shoot every project with cinema discipline.
+              </p>
+              <div class="p-tags">
+                <span>[4K CINEMA]</span>
+                <span>[COMMERCIAL TVC]</span>
+                <span>[DIRECTING]</span>
+                <span>[LIGHTING DESIGN]</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pipeline-item">
+            <div class="p-num">02</div>
+            <div class="p-content">
+              <h3 class="p-title">ALGORITHM-ENGINEERED SOCIAL SYSTEMS</h3>
+              <p class="p-desc">
+                We take cinema-grade footage and slice it into high-retention 9:16 vertical films. We write the pacing, the hooks, and the audio design specifically to outperform standard social content.
+              </p>
+              <div class="p-tags">
+                <span>[RETENTION PACING]</span>
+                <span>[VIRAL REELS]</span>
+                <span>[FULL RETAINER]</span>
+                <span>[GROWTH ARCHITECTURE]</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pipeline-item">
+            <div class="p-num">03</div>
+            <div class="p-content">
+              <h3 class="p-title">BRAND NARRATIVE & CAMPAIGN DIRECTION</h3>
+              <p class="p-desc">
+                We craft the positioning before turning the camera on. For businesses in Indore, Dubai, and beyond, we ensure your visual assets tell a singular, coherent, premium brand story.
+              </p>
+              <div class="p-tags">
+                <span>[BRAND STRATEGY]</span>
+                <span>[CAMPAIGN SCRIPTS]</span>
+                <span>[VISUAL IDENTITY]</span>
+                <span>[DUBAI &bull; INDIA]</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pipeline-item">
+            <div class="p-num">04</div>
+            <div class="p-content">
+              <h3 class="p-title">COLOR GRADING & POST-PRODUCTION LAB</h3>
+              <p class="p-desc">
+                In-house color grading suite and sound mixing. Hollywood color sciences applied to commercial assets so every frame has depth, texture, and uncompromising polish.
+              </p>
+              <div class="p-tags">
+                <span>[DAVINCI RESOLVE]</span>
+                <span>[FOLEY AUDIO]</span>
+                <span>[SOUND DESIGN]</span>
+                <span>[MASTER DELIVERY]</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PROVEN METRICS (Real Outcomes) -->
+    <section class="metrics-section" id="metrics">
+      <div class="section-container">
+        
+        <div class="metrics-grid">
+          <div class="metric-block highlight">
+            <div class="m-val" data-target="7">0</div><span class="m-suffix">.1M+</span>
+            <div class="m-label">SINGLE CAMPAIGN RECORD</div>
+            <div class="m-sub">Pure organic audience retention generated for client commercial reels.</div>
+          </div>
+
+          <div class="metric-block">
+            <div class="m-val" data-target="14">0</div><span class="m-suffix">M+</span>
+            <div class="m-label">TOTAL DIGITAL VIEWS DELIVERED</div>
+            <div class="m-sub">Across hospitality, healthcare, packaging, and luxury brand commissions.</div>
+          </div>
+
+          <div class="metric-block">
+            <div class="m-val">2</div><span class="m-suffix"> REGIONS</span>
+            <div class="m-label">CENTRAL INDIA &bull; DUBAI UAE</div>
+            <div class="m-sub">Producing commercial content and managing accounts across borders.</div>
+          </div>
+
+          <div class="metric-block">
+            <div class="m-val" data-target="100">0</div><span class="m-suffix">%</span>
+            <div class="m-label">PIPELINE RETENTION</div>
+            <div class="m-sub">Every client who commissions a commercial film stays on retainer.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: STUDIO ETHOS / MANIFESTO -->
+    <section class="ethos-section" id="studio">
+      <div class="section-container">
+        
+        <div class="ethos-card">
+          <span class="mono-flag">// [INDEX: 04] &bull; STUDIO ETHOS</span>
+          <h2 class="ethos-headline">
+            "COMMERCIAL WORK DOESN'T HAVE TO LOOK CHEAP."
+          </h2>
+          <div class="ethos-body">
+            <p>
+              Most businesses get trapped between two bad options: expensive film production houses who don't understand social algorithms, and cheap social media agencies who have zero camera taste.
+            </p>
+            <p>
+              FILMITUP was founded in Indore to bridge that exact void. We bring director-level cinematography, color timing, and sound design to commercial businesses — and distribute it with ruthless social strategy.
+            </p>
+          </div>
+          <div class="ethos-footer">
+            <span class="ethos-sig">&mdash; FILMITUP STUDIO / INDORE &bull; DUBAI</span>
+            <a href="https://instagram.com/filmitup.media" target="_blank" class="ethos-insta-link">@FILMITUP.MEDIA &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: DIRECT CHANNEL (Contact) -->
+    <section class="contact-section" id="contact">
+      <div class="section-container">
+        
+        <div class="contact-monolith-grid">
+          
+          <div class="contact-left">
+            <span class="mono-flag">// [INDEX: 05] &bull; DIRECT TRANSMISSION</span>
+            <h2 class="contact-heading">INITIATE A COMMISSION</h2>
+            <p class="contact-lead">
+              Whether you need a commercial film, a brand re-positioning, or an end-to-end production pipeline in India or Dubai — transmit your brief below.
+            </p>
+
+            <div class="direct-channels-list">
+              <div class="channel-row">
+                <span class="chan-label">DIRECT INQUIRIES:</span>
+                <a href="mailto:filmitupstudios@gmail.com" class="chan-val">filmitupstudios@gmail.com</a>
+              </div>
+              <div class="channel-row">
+                <span class="chan-label">INSTAGRAM:</span>
+                <a href="https://instagram.com/filmitup.media" target="_blank" class="chan-val">@filmitup.media</a>
+              </div>
+              <div class="channel-row">
+                <span class="chan-label">PRIMARY HUBS:</span>
+                <span class="chan-val">Indore, MP, India // Dubai, UAE</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form class="terminal-form" id="commissionForm">
+              
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="clientName">[CLIENT / BRAND NAME]</label>
+                  <input type="text" id="clientName" name="name" required placeholder="e.g. Pizza Don / Apex Trading" />
+                </div>
+                <div class="form-field">
+                  <label for="clientEmail">[OFFICIAL EMAIL]</label>
+                  <input type="email" id="clientEmail" name="email" required placeholder="client@brand.com" />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="commissionType">[COMMISSION SCOPE]</label>
+                <select id="commissionType" name="scope" required>
+                  <option value="" disabled selected>Select Commission Scope</option>
+                  <option value="commercial">Commercial Film / TVC Campaign</option>
+                  <option value="social-pipeline">Full Production + Social Pipeline (Monthly)</option>
+                  <option value="brand-film">Brand Film & Identity Overhaul</option>
+                  <option value="dubai-global">International / Dubai Trade Commission</option>
+                  <option value="other">Bespoke Production Scope</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="projectDetails">[PROJECT BRIEF & TIMELINE]</label>
+                <textarea id="projectDetails" name="details" rows="4" required placeholder="Describe your product, goals, and anticipated production timeline..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-brutal primary w-full" id="submitBtn">
+                <span class="btn-text">TRANSMIT BRIEF &rarr;</span>
+              </button>
+
+              <div class="form-status-msg" id="formStatus"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Studio Footer -->
+  <footer class="studio-footer">
+    <div class="section-container footer-flex">
+      <div class="footer-col">
+        <span class="footer-brand">FILMITUP</span>
+        <span class="footer-tagline">PRODUCTION-LED CREATIVE STUDIO</span>
+      </div>
+      <div class="footer-col center">
+        <span>LOCATIONS: INDORE [HQ] &bull; DUBAI [PARTNER HUB]</span>
+        <span class="mono-dim">&copy; 2025 FILMITUP MEDIA. ALL WORK CURATED.</span>
+      </div>
+      <div class="footer-col right">
+        <a href="#home" class="back-to-top">[TOP &uarr;]</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Case Studies -->
+  <div class="case-lightbox" id="caseLightbox" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-panel">
+      <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close Case Study">&times;</button>
+      <div class="lightbox-body" id="lightboxBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
