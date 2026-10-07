@@ -34,7 +34,7 @@
   --accent-amber: #E27D38; /* Raw tungsten/film light */
   --accent-amber-glow: rgba(226, 125, 56, 0.15);
 
-  /* Fonts */
+  /* Fonts: Preserved Exactly */
   --font-display: 'Syne', -apple-system, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
   --font-mono: 'Space Mono', monospace;
@@ -210,11 +210,6 @@ body.studio-body {
   transition: color 0.2s;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-}
-
-.nav-item .mono-idx {
-  color: var(--text-dim);
 }
 
 .nav-item:hover {
@@ -308,14 +303,7 @@ body.studio-body {
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 16px;
   letter-spacing: -0.02em;
-}
-
-.drawer-num {
-  font-family: var(--font-mono);
-  font-size: 1rem;
-  color: var(--text-dim);
 }
 
 .drawer-item.highlight {
@@ -357,10 +345,6 @@ body.studio-body {
   color: var(--text-silver);
   margin-bottom: 36px;
   flex-wrap: wrap;
-}
-
-.coord-label {
-  color: var(--text-dim);
 }
 
 .coord-item.status {
@@ -765,7 +749,7 @@ body.studio-body {
   color: var(--text-dim);
 }
 
-/* ---------- 5. The Pipeline (Production + Social) ---------- */
+/* ---------- 5. Studio Capabilities ---------- */
 .pipeline-section {
   padding: var(--section-pad) 0;
   border-top: 1px solid var(--border-subtle);
@@ -834,7 +818,7 @@ body.studio-body {
   letter-spacing: 1px;
 }
 
-/* ---------- 6. Proven Metrics ---------- */
+/* ---------- 6. Proven Impact ---------- */
 .metrics-section {
   padding: clamp(60px, 8vw, 100px) 0;
   border-top: 1px solid var(--border-subtle);
@@ -934,7 +918,7 @@ body.studio-body {
   font-family: var(--font-mono);
   font-size: 0.78rem;
   letter-spacing: 1.5px;
-  flex-wrap: gap;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -953,7 +937,7 @@ body.studio-body {
   color: var(--accent-amber);
 }
 
-/* ---------- 8. Direct Commission Terminal (Contact) ---------- */
+/* ---------- 8. Contact Section ---------- */
 .contact-section {
   padding: var(--section-pad) 0;
   border-top: 1px solid var(--border-subtle);
@@ -1195,7 +1179,6 @@ body.studio-body {
   color: var(--bg-void);
 }
 
-/* Dynamic Content Inside Lightbox */
 .lb-media {
   position: relative;
   aspect-ratio: 16/9;

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FILMITUP — Studio Script
+   FILMITUP — Studio Script (Design Testing Sandbox)
    Interactions, Work Filtering, Case Lightbox & Metrics Engine
    ========================================================================== */
 
@@ -12,13 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const drawerLinks = document.querySelectorAll('.drawer-item');
 
   function openDrawer() {
-    mobileDrawer.classList.add('open');
-    document.body.style.overflow = 'hidden';
+    if (mobileDrawer) {
+      mobileDrawer.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
   }
 
   function closeDrawer() {
-    mobileDrawer.classList.remove('open');
-    document.body.style.overflow = '';
+    if (mobileDrawer) {
+      mobileDrawer.classList.remove('open');
+      document.body.style.overflow = '';
+    }
   }
 
   if (menuToggle) menuToggle.addEventListener('click', openDrawer);
@@ -64,6 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxBody = document.getElementById('lightboxBody');
 
   function openCaseLightbox(item) {
+    if (!lightbox || !lightboxBody) return;
+
     const title = item.dataset.title || 'COMMERCIAL PRODUCTION';
     const client = item.dataset.client || 'Client Commission';
     const type = item.dataset.type || 'Commercial Film';
@@ -78,8 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
       <div class="lb-content">
         <div class="lb-tag-row">
-          <span>// [${type.toUpperCase()}]</span>
-          <span>[YEAR: ${year}] &bull; [CLIENT: ${client.toUpperCase()}]</span>
+          <span>// ${type.toUpperCase()}</span>
+          <span>YEAR: ${year} &bull; CLIENT: ${client.toUpperCase()}</span>
         </div>
         <h3 class="lb-title">${title}</h3>
         <p class="lb-desc">${desc}</p>
@@ -89,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div style="margin-top: 10px;">
           <a href="#contact" class="btn-brutal primary" id="lbInquireBtn" style="width: 100%; justify-content: center;">
-            <span>COMMISSION A SIMILAR CAMPAIGN &rarr;</span>
+            <span>START A SIMILAR PROJECT &rarr;</span>
           </a>
         </div>
       </div>
@@ -112,8 +118,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function closeLightbox() {
-    lightbox.classList.remove('active');
-    document.body.style.overflow = '';
+    if (lightbox) {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
   }
 
   workItems.forEach(item => {
@@ -179,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
     metricsAnimated = true;
   }
 
-  const metricsSection = document.getElementById('metrics');
+  const metricsSection = document.getElementById('impact');
   if (metricsSection) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -192,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(metricsSection);
   }
 
-  // ---------- 6. Terminal Commission Form ----------
+  // ---------- 6. Commission Form Submission ----------
   const commissionForm = document.getElementById('commissionForm');
   const formStatus = document.getElementById('formStatus');
   const submitBtn = document.getElementById('submitBtn');
@@ -202,19 +210,21 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
 
       const origText = submitBtn.innerHTML;
-      submitBtn.innerHTML = '<span class="btn-text">TRANSMITTING BRIEF...</span>';
+      submitBtn.innerHTML = '<span class="btn-text">SENDING INQUIRY...</span>';
       submitBtn.disabled = true;
 
       setTimeout(() => {
-        submitBtn.innerHTML = '<span class="btn-text" style="color: #22c55e;">BRIEF TRANSMITTED &check;</span>';
-        formStatus.innerHTML = '<span style="color: #EDEDED;">[TRANSMISSION LOGGED]: Studio direction will respond within 24 hours.</span>';
+        submitBtn.innerHTML = '<span class="btn-text" style="color: #22c55e;">INQUIRY RECEIVED &check;</span>';
+        if (formStatus) {
+          formStatus.innerHTML = '<span style="color: #EDEDED;">Thank you. Studio direction will respond within 24 hours.</span>';
+        }
 
         setTimeout(() => {
           submitBtn.innerHTML = origText;
           submitBtn.disabled = false;
           commissionForm.reset();
         }, 4000);
-      }, 1000);
+      }, 800);
     });
   }
 
