@@ -358,8 +358,8 @@ body.studio-body {
 .hero-headline {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(2.4rem, 6.2vw, 5.8rem);
-  line-height: 1.04;
+  font-size: clamp(2.8rem, 6.2vw, 5.8rem);
+  line-height: 1.0;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: var(--text-primary);
@@ -367,6 +367,13 @@ body.studio-body {
 
 .hero-headline .line-row {
   display: block;
+  white-space: nowrap;
+}
+
+@media (max-width: 540px) {
+  .hero-headline .line-row {
+    white-space: normal;
+  }
 }
 
 .serif-accent {
